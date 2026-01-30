@@ -25,6 +25,17 @@ Oppure tramite il file batch `estrai_audio.bat` (nota: il percorso nel .bat punt
 - **ffmpeg** - deve essere installato e raggiungibile dal PATH (usato sia da moviepy che da yt-dlp)
 - **selenium** - `pip install selenium` (per estrazione URL video da pagine autenticate; Selenium 4.6+ include Selenium Manager che scarica ChromeDriver automaticamente)
 - **tkinter** - incluso nella distribuzione standard di Python
+- **deno** (opzionale) - runtime JavaScript per yt-dlp; consigliato per evitare warning ma non indispensabile
+
+### Aggiornamento yt-dlp
+
+**Importante**: yt-dlp deve essere aggiornato frequentemente perché YouTube e altre piattaforme cambiano spesso le loro API. Se il download fallisce con errori 403 o simili:
+
+```bash
+pip install --upgrade yt-dlp
+```
+
+Questo risolve la maggior parte dei problemi di download. Il team di yt-dlp rilascia aggiornamenti frequenti per stare al passo con i cambiamenti delle piattaforme video.
 
 ## Configurazione
 
